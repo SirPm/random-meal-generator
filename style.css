@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    height: 90vh;
 }
 
 header {
@@ -65,7 +66,7 @@ img {
     color: white;
 }
 
-#foodName {
+#foodName, .list-heading, #instrHeading, #video {
     margin-bottom: 1rem;
     border-bottom: 1px solid rgb(243, 79, 4);
     padding: 0.3rem;
@@ -124,8 +125,6 @@ img {
 footer {
     background-color: black;
     color: white;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     font-size: 0.9rem;
     height: 10vh;
@@ -135,6 +134,7 @@ footer {
     flex-direction: column-reverse;
     justify-content: space-between;
     padding: 1rem;
+    margin-top: 100%;
 }
 
 footer a {
