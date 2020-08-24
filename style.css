@@ -1,5 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(32, 36, 35, 0.4), rgba(34, 39, 37, 0.5)), url(Rectangle\ 14.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header-div {
+    margin: 0 auto;
+    align-self: center;
+    border: 1px solid rgba(243, 243, 243, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: 40%;
+}
+
+#headerText {
+    font-size: 1.2rem;
+    font-weight: 200;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
 img {
     width: 50%;
-    margin: auto;
+    margin: 2rem auto;
     display: block;
+    border-radius: 0.4rem;
+}
+
+#generateBtn {
+    margin: 2rem auto;
+    display: block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    background: linear-gradient(rgb(247, 85, 10), rgba(238, 196, 7, 0.7));
+    border: 1px solid transparent;
+    border-bottom: transparent;
+    transition: all 0.5s ease;
+    border-radius: 0.6rem;
+}
+
+#generateBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+#foodName {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(243, 79, 4);
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.c-and-r, .list-heading, #instrHeading {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.list-heading, #instrHeading {
+    margin-bottom: 1rem;
+}
+
+#instrHeading {
+    margin-top: 1rem;
+}
+
+#video {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.video-div {
+    margin: auto;
+    display: flex;
+}
+
+.video-inner {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 50vh;
+    }
+
+    .header-div {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 40vh;
+    }
+
+    .header-div {
+        width: 80%;
+    }
 }
